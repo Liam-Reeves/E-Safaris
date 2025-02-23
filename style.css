@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safari Tours Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Explore the Wild</h1>
+      <p>Book your dream safari adventure today!</p>
+      <form class="booking-form">
+        <input type="text" placeholder="Destination" required>
+        <input type="date" placeholder="Check-in Date" required>
+        <input type="date" placeholder="Check-out Date" required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Featured Tours Section -->
+  <section class="featured-tours">
+    <h2>Featured Tours</h2>
+    <div class="tour-grid">
+      <div class="tour-card">
+        <img src="https://via.placeholder.com/300x200" alt="Tour 1">
+        <h3>Serengeti Safari</h3>
+        <p>Experience the great migration.</p>
+        <p class="price">$500</p>
+        <button>Book Now</button>
+      </div>
+      <div class="tour-card">
+        <img src="https://via.placeholder.com/300x200" alt="Tour 2">
+        <h3>Maasai Mara Adventure</h3>
+        <p>Witness the Big Five.</p>
+        <p class="price">$600</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Safari Tours. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
