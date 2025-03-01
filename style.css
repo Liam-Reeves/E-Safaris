@@ -311,7 +311,10 @@ ul{
     padding-top: 20px;
     padding-left: 60px;
     font-weight: 500;
-
+    transition: all 0.5s ease;
+}
+.filter-container .filter-heading h2:hover{
+    transform: translateY(-10px);
 }
 .filter-container .filter-heading span{
     font-size: 35px;
@@ -394,4 +397,77 @@ ul{
 .main-filter-system .btn:hover{
     background: #080707;
     color: #fefbfa;
+}
+
+/* BRAND SECTION */
+.brand-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f8f8f8;
+}
+.brand-section .brand-text h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #080707;
+    padding-top: 5px;
+    align-items: center
+}
+.brand-section .brand-text{
+    transition: all 0.3s ease-in-out;
+}
+.brand-section .brand-text:hover{
+    transform: translateY(-10px);
+}
+.brand-section .brand-text p{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #105751;
+    padding-top: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.brand-container{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    gap: 30px;
+}
+.brand-logo img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out; 
+}
+.brand-logo img:hover{
+    transform: scale(1.1);
+}
+/* REVIEW SECTION */
+
+.review-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f8f8f8;
+}
+.review-section .reviews-heading h2{
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #080707;
+    padding-top: 5px;
+    transition: all 0.5s ease-in-out;
+    
+}
+ .review-section .reviews-heading:hover{
+    transform: translateY(-10px);
+}
+.review-section .reviews-heading span{
+    font-size: 35px;
+    color: #105751;
+    font-weight: 500;
 }
