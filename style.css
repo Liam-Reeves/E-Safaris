@@ -610,7 +610,7 @@ html{
     font-size: 35px;
     padding-top: 5px;
     padding-bottom: 5px;
- vmcno  }
+  }
  .about-footer h3 {
     color: #f5f5f5;
     text-align: center;
@@ -629,3 +629,16 @@ html{
     align-items: center;
     gap: 20px;
 }
+.social-media ul li a {
+    font-size: 40px;
+    color: #dfa45d;
+    transition: all 0.3s ease-in-out;
+}
+.social-media ul li a i{
+    transition: all 0.3s ease-in-out;
+}
+.social-media ul li a i:hover { 
+    color: #f5f5f5;
+    transform: translateY(-5px);
+}
+
