@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Navbar Styles */
+.nav-container {
+    width: 100%;
+    background: transparent;
+}
+
+.home-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.logo-container {
+    background: #dfa45d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+.logo-container .brand-logo {
+    text-decoration: none;
+    color: #080707;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.logo-container:hover {
+    background: #080707;
+    transform: translateY(-5px);
+    color: #fefbfa;
+
+}
+
+.nav-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #080707;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    transition: 0.3s ease;
+}
+
+.nav-link a:hover {
+    transform: translateY(-5px);
+    color: #dfa45d;
+}
+
+.user-icon {
+    font-size: 24px;
+}
+
+.user-icon a i {
+    color: #080707;
+    transition: 0.3s ease-in-out;
+}
+
+.user-icon a i:hover {
+    transform: translateY(-5px);
+    color: #dfa45d;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.image-slides{
+    padding: 20px 20px;
+
+}
+.image-slide-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+} 
+.image-slides .tour-heading{
+    padding-top: 50px;
+    font-size: 35px;
+    padding-left: 50px;
+    font-weight: 500;
+    color: #105751;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+}
+.main-video video {
+    padding: 50px 50px;
+    max-width: 800px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.image-slide-thumbnails{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.image-slide-thumbnail{
+    cursor: pointer;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+.image-slide-thumbnail img{
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+}
+.tour-overview{
+    padding: 20px 60px;
+    font-family: 'Playfair Display', serif;
+}
+.overview-heading{
+    font-size: 30px;
+    font-weight: 500;
+    color: #105751;
+    text-align: left;
+    padding-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+.overview-container{
+    display: flex;
+    flex-wrap: nowrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 200px;
+}
+.itinerary {
+       margin-bottom: 20px;
+   }
+.itinerary h5{
+    color: #105751;
+}
+.itinerary h3 {
+    color: #105751;
+    text-transform: uppercase;
+}
+.itinerary-overview{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+aside {
+    float: right;
+    width: 500px;
+    float: right;
+    background-color:#105751;
+    padding: 20px;
+}
+.booking-details{
+    padding: 20px 60px;
+    font-family: 'Playfair Display', serif;
+    background-color:#dfa45d;
+}
+.booking-details h4{
+    color: #080707;
+    font-size: 40px;
+    font-weight: 800;
+}
+.booking-details span{
+    color: #105751;
+    font-size: 16px;
+    font-weight: 500;
+}
+.booking-details p{
+    color:#105751;
+    font-size: 20px;
+    font-weight: 500;
+}
+.calendar {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+  }
+.calendar div {
+  cursor: pointer;
+  margin: 0 5px;
+  background-color: #105751;
+  color: #fff;
+  padding: 5px 5px;
+  transition: all 0.3s ease-in-out;
+   border: 1px solid #302f2f;
+ }
+ .calendar div:hover{
+   background-color:#080707;
+   color: #fff;
+
+
+ }
+ .add-ons {
+   margin: 20px 0;
+}
+ .add-ons label {
+    display: block;
+    margin: 10px 0;
+    color: #105751;
+    font-weight: 500;
+}
+ .book-now {
+    background-color: #105751;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+ }
+.book-now:hover {
+   background-color:#080707;
+   color: #fff;
+   transform: translateY(-5px);
+}
+
+/* LOCATION SECTION */
+.location-container{
+    display: flex;
+    gap: 200px;
+    padding: 20px 60px;
+    font-family: 'Playfair Display', serif;
+    
+}
+.extras{
+    padding-top: 50px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+
