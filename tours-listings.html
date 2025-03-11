@@ -6,69 +6,161 @@
     <title>Tour-Listings</title>
     <link rel="stylesheet" href="tour-listings.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fd48f3693c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-     <div class="nav-container">
-    <nav class="home-nav">
-          <div class="logo-container">
-          <a href="" class="brand-logo">E-SAFARIS</a>
-        </div>
-         <div class="nav-links-container">
-          <ul class="nav-links">
-          <li class="nav-link"><a href="tours-listings.html">Explore</a></li>
-          <li class="nav-link"><a href="">Featured</a></li>
-          <li class="nav-link"><a href="">Account</a></li>
-          <li class="nav-link"><a href="">FAQs</a></li>
-        </ul>
-      </div>
-      <div class="user-icon">
-        <a href=""><i class="fas fa-user"></i></a>
-      </div>
-     </nav>
-    <section class="main-filter-section">
-          
-          <div class="tour-filter-container">
-             <div class="filter-section">
-                <h2>Location</h2>
-                <label for=""><input type="checkbox"> Kenya</label>
-                <label for=""><input type="checkbox"> Uganda</label>
-                <label for=""><input type="checkbox"> Tanzania</label>
-                <label for=""><input type="checkbox"> Rwanda</label>
-                <label for=""><input type="checkbox"> South Africa</label>
+    <!-- Navbar -->
+    <header class="nav-container">
+        <nav class="home-nav">
+            <div class="logo-container">
+                <a href="#" class="brand-logo">Safari Tours</a>
             </div>
-                <div class="filter-section">
-                <h2>Duration</h2>
-                <label for=""><input type="checkbox"> 7-days</label>
-                <label for=""><input type="checkbox"> 14-days</label>
-                <label for=""><input type="checkbox"> 3 weeks</label>
-                <label for=""><input type="checkbox"> 1 month</label>
-                <label for=""><input type="checkbox"> 3-months</label>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#">Tours</a></li>
+                    <li class="nav-link"><a href="#">About Us</a></li>
+                    <li class="nav-link"><a href="#">Contact</a></li>
+                </ul>
             </div>
-               <div class="filter-section">
-                <h2>Price </h2>
-                   <label for="priceRange" class="slider-label">Price Range: $<span id="priceValue">50</span></label>
-                  <input type="range" min="0" max="1000" class="price-slide" id="">
-            
+            <div class="user-icon">
+                <a href="#"><i class="fas fa-user"></i></a>
             </div>
-            </div>
-            <div class="sort-dropdown">
-                <select name="" id="">
-                    <option value="">Sort by</option>
-                    <option value="">Price</option>
-                    <option value="">Duration</option>
-                    <option value="">Location</option>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main class="main-filter-section">
+        <!-- Filter Section -->
+        <aside class="tour-filter-container">
+            <div class="filter-section">
+                <h2>Filter Tours</h2>
+                <label for="location-filter">Location:</label>
+                <select id="location-filter">
+                    <option value="all">All</option>
+                    <option value="safari">Safari</option>
+                    <option value="beach">Beach</option>
+                    <option value="mountain">Mountain</option>
                 </select>
             </div>
 
-            
+            <div class="filter-section">
+                <h2>Price Range</h2>
+                <label for="price-filter">Select Price:</label>
+                <input type="range" id="price-filter" min="0" max="1000" step="50">
+            </div>
 
-        </div>
+            <div class="filter-section">
+                <h2>Duration</h2>
+                <label for="duration-filter">Select Duration:</label>
+                <select id="duration-filter">
+                    <option value="all">All</option>
+                    <option value="1-3">1-3 Days</option>
+                    <option value="4-7">4-7 Days</option>
+                    <option value="7+">7+ Days</option>
+                </select>
+            </div>
+        </aside>
+        <!-- Tour Cards Section -->
+        <section class="tours-section">
+            <div class="tour-cards" id="tour-cards-container">
+                <div class="tour-card">
+                    <img src="assets/elephant.jpg" alt="Tour 1">
+                    <div class="tour-info">
+                        <h4>Amazing Safari</h4>
+                        <div class="tour-details">
+                            <span>3 Days</span>
+                            <span>$500</span>
+                        </div>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <img src="assets/horizon nature.jpg" alt="Tour 2">
+                    <div class="tour-info">
+                        <h4>Beach Escape</h4>
+                        <div class="tour-details">
+                            <span>5 Days</span>
+                            <span>$800</span>
+                        </div>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <img src="assets/zebras.jpg" alt="Tour 3">
+                    <div class="tour-info">
+                        <h4>Mountain Adventure</h4>
+                        <div class="tour-details">
+                            <span>7 Days</span>
+                            <span>$1200</span>
+                        </div>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+                      <div class="tour-card hidden">
+                    <img src="assets/horizon nature.jpg" alt="Tour 2">
+                    <div class="tour-info">
+                        <h4>Beach Escape</h4>
+                        <div class="tour-details">
+                            <span>5 Days</span>
+                            <span>$800</span>
+                        </div>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+                     <div class="tour-card hidden">
+                    <img src="assets/zebras.jpg" alt="Tour 3">
+                    <div class="tour-info">
+                        <h4>Mountain Adventure</h4>
+                        <div class="tour-details">
+                            <span>7 Days</span>
+                            <span>$1200</span>
+                        </div>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+                     <div class="tour-card hidden">
+                    <img src="assets/zebras.jpg" alt="Tour 3">
+                    <div class="tour-info">
+                        <h4>Mountain Adventure</h4>
+                        <div class="tour-details">
+                            <span>7 Days</span>
+                            <span>$1200</span>
+                        </div>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+                 <div class="tour-card hidden">
+                    <img src="assets/horizon nature.jpg" alt="Tour 2">
+                    <div class="tour-info">
+                        <h4>Beach Escape</h4>
+                        <div class="tour-details">
+                            <span>5 Days</span>
+                            <span>$800</span>
+                        </div>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+   
+    </main>
+    <section>
+      <label for="btnBox" class="btn-area">
+        <span class="btn1">LOAD MORE</span>
+         <span class="btn1">LOAD LESS</span>
+      </label>
     </section>
 
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
