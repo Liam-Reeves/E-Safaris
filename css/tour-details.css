@@ -108,6 +108,30 @@ html {
     text-align: left;
     font-family: 'Playfair Display', serif;
 }
+.image-slides .locate-tour{
+    display: flex;
+    padding-left: 50px;
+    gap: 10px;
+  
+}
+.locate-tour .star p {
+    color: #105751;
+    font-size: 20px;
+    font-family: 'PlayFair Display',serif;
+}
+.locate-tour .duration p{
+   color:#105751;
+    font-size: 20px;
+        font-family: 'PlayFair Display', serif;
+}
+.locate-tour .place p{
+    color: #105751;
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: 'PlayFair Display', serif;
+}
+
+
 .main-video video {
     padding: 50px 50px;
     max-width: 800px;
@@ -250,5 +274,208 @@ aside {
     flex-wrap: wrap;
   
 }
+.map-heading{
+    font-size: 30px;
+    font-weight: 500;
+    color: #105751;
+    text-align: left;
+    padding-bottom: 20px;
+    font-family: 'Playfair Display', serif; 
+}
+.exclusions-list{
+    text-decoration: none;
+}
+/* General section styling */
+.reviews-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.reviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.reviews-container h2 {
+    font-family: 'PlayFair Display', sans-serif;
+    font-size: 2.5rem;
+    color: #105751;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.review-info-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 60px;
+    font-family: 'Playfair Display', serif;
+}
+.review-ImgBox {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.review-ImgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.name-rating {
+    text-align: left;
+}
+.name-rating h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.rating-text p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .review-info-card-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .review-ImgBox {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .name-rating {
+        text-align: center;
+    }
+
+    .reviews-container h2 {
+        font-size: 2rem;
+    }
+}
+ /* FOOTER SECTION */
+ .footer-container {
+     background: #105751;
+     padding: 50px 50px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     gap: 20px;
+     margin-top: 40px;
+ }
+
+ .quick-links h3 {
+     color: #f5f5f5;
+     text-align: center;
+     font-family: 'Playfair Display', serif;
+     font-size: 35px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     transition: all 0.5s ease;
+ }
+
+ .quick-links ul {
+     list-style: none;
+ }
+
+ .quick-links ul li {
+     margin-bottom: 10px;
+ }
+
+ .quick-links ul li a {
+     color: #dfa45d;
+     font-size: 16px;
+     text-decoration: none;
+     transition: all 0.3s ease;
+     font-family: 'Playfair Display', serif;
+ }
+
+ .contact h3 {
+     color: #f5f5f5;
+     text-align: center;
+     font-family: 'Playfair Display', serif;
+     font-size: 35px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     transition: all 0.5s ease;
+ }
+
+ .contact p {
+     color: #dfa45d;
+     text-align: center;
+     font-size: 16px;
+     font-family: 'Playfair Display', serif;
+ }
+
+ .contact p a {
+     color: #dfa45d;
+     text-decoration: none;
+     transition: all 0.3s ease;
+ }
+
+ .contact p span {
+     color: #f5f5f5;
+
+ }
+
+ .social-media ul {
+     list-style: none;
+     display: flex;
+     gap: 20px;
+     margin-top: 10px;
+ }
+
+ .social-media h3 {
+     color: #f5f5f5;
+     text-align: center;
+     font-family: 'Playfair Display', serif;
+     font-size: 35px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+ }
+
+ .about-footer h3 {
+     color: #f5f5f5;
+     text-align: center;
+     font-family: 'Playfair Display', serif;
+     font-size: 35px;
+     padding-top: 10px;
+     padding-bottom: 5px;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .about-footer p {
+     color: #dfa45d;
+     text-align: left;
+ }
+
+ .contact {
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+ }
+
+ .social-media ul li a {
+     font-size: 40px;
+     color: #dfa45d;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .social-media ul li a i {
+     transition: all 0.3s ease-in-out;
+ }
+
+ .social-media ul li a i:hover {
+     color: #f5f5f5;
+     transform: translateY(-5px);
+ }
