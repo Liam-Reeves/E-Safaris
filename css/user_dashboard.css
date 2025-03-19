@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav .navbar{
+    background:#105751;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+nav .navbar-brand{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #dfa45d;
+
+}
+.nav-item .nav-link{
+   color:#105751;
+   gap: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+.main-content
+.profile-menu{
+    font-family: 'Playfair Display', serif;
+    width:250px;
+    height:200vh;
+    background: #105751;
+    color: #dfa45d ;
+}
+.profile-menu h2{
+    padding: 20px 20px;
+}
+.profile-menu ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.profile-menu ul li a {
+    color: #dfa45d;
+    text-decoration: none;
+    font-size: 25px;
+    gap: 20px;
+
+}
+.profile-pic img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.main-content{
+    display: flex;
+    gap: 50px;
+}
+.main-content{
+    background: #eee;
+    margin-top: 30px;
+}
+.profile-section .profile-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.profile-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.profile-container .profile-ImgBox i{
+    padding-top: 50px;
+    font-size: 50px;
+  
+}
+.proflle-container{
+   display: flex;
+}
+.profile-container .profile-info {
+    padding-top: 50px;
+    color: #105751;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.profile-section .edit-profile button{
+    width: 100px;
+    height: 50px;
+    color: #dfa45d;
+    background: #105751;
+    border: none;
+    transition: all 0.3s ease;
+    font-family: 'PlayFair Display',serif;
+    font-size: 18px;
+}
+.profile-section .edit-profile button:hover{
+    background: #dfa45d;
+    color: #105751;
+}
+.input-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.input-profile input{
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+ 
+    color: #000;
+
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.input-profile input:hover{
+    background: #000;
+    color: #fff;
+}
+.input-profile label{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #105751;
+    font-weight: 500;
+}
+.booking-container{
+    background: #F8F8ff;
+    margin-top: 30px;
+    max-width: 1000px;
+}
+.booking-container h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #105751;
+    margin-top: 30px;
+    padding: 20px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+}
+.booking-container h2:hover{
+    transform: translateY(-5px);
+}
+.booking-slot{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: #105751;
+}
+.booking-slot .booking-info{
+    display: flex;
+    flex-direction: column;
+  }
+.booking-info h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #F8f8ff;
+    font-weight: 500;
+}
+.booking-info p{
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #f8f8ff;
+    font-weight: 500;
+}
+.booking-status{
+    background:#dfa45d ;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+.booking-status:hover{
+    background: #000;
+    color: #dfa45d;
+    transform: translateY(-5px);
+}
+.booking-status p{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #105751;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 10px;
+}
+.booking-status p:hover {
+    color: #f8f8ff;
+}
